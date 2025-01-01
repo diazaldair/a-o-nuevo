@@ -1,0 +1,24 @@
+/* Estilos para el canvas que ocupa toda la pantalla */
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el mensaje "Feliz Año Nuevo" */
+#message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #d81b1b;
+  font-size: 48px;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  pointer-events: none; /* Permite que los clics pasen a través del mensaje al canvas */
+  user-select: none; /* Evita que el texto sea seleccionable */
+}
